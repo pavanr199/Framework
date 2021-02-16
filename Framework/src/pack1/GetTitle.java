@@ -9,15 +9,15 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
 public class GetTitle {
-	
+	static WebDriver driver;
 	public static void main(String[] args) {
 
 		
-//Launch chrome driver		
+//Launch firefox  driver   insted of chrome		
 		
 		
-		System.setProperty("webdriver.chrome.driver", "G:\\Eclipselatest\\chromedriver.exe");
-		WebDriver driver=new ChromeDriver();
+		System.setProperty("webdriver.gecko.driver", "G:\\Eclipselatest\\drivers\\geckodriver.exe");
+		driver=new FirefoxDriver();
 
 		
 	//	driver.get("https://www.pur.com/");
